@@ -46,8 +46,8 @@
 }
 
 .custom-search-input {
-    height: 80px;
-    width: 600px;
+    height: 110px;
+    width: 900px;
     background: linear-gradient(89.17deg, #003DCA 2.97%, #3738FF 95.78%);
     color: white;
     border: none;
@@ -56,4 +56,16 @@
 
 .custom-search-input::placeholder {
     color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 100px;
+}
+
+.search-img, .next-img, .mike-img {
+    width: 40px;
+    height: 40px;
+}
+
+.next-img-div {
+    background: #3030C2;
 }
