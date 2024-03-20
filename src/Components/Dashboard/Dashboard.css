@@ -1,0 +1,59 @@
+.dashboard {
+    background: #f1f1f1;
+}
+
+.dashboard .right-arrow {
+    font-weight: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.dashboard .listing-card {
+    width: 170px;
+    height: 120px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.listing-card-img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+}
+
+.dashboard .scroll-arrows .scroll-button:focus {
+    outline: none;
+}
+
+.dashboard #listing-container {
+    transition: transform 0.3s ease;
+}
+
+.mask-img {
+    width: 55%;
+    height: 55%;
+}
+
+.custom-search-input {
+    height: 80px;
+    width: 600px;
+    background: linear-gradient(89.17deg, #003DCA 2.97%, #3738FF 95.78%);
+    color: white;
+    border: none;
+    border-radius: 60px 60px 60px 60px;
+}
+
+.custom-search-input::placeholder {
+    color: white;
+}

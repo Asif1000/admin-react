@@ -2,3 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: sans-serif;
+    background: #999999;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.paragraph {
+    font-size: 13px;
+    font-weight: normal;
+}
