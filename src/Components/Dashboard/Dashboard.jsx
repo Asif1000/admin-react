@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./Dashboard.css";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import img1 from "../../assets/Icons/home-icon.svg";
 import logoimg1 from "../../assets/Icons/video-icon.svg";
@@ -10,13 +9,17 @@ import Search from "../../assets/Icons/Search.svg";
 import mike from "../../assets/Icons/Mike.svg";
 import ListingCards from "./ListingCards";
 import LineChart from "./LineChart";
-
 import DonutChart from "./DonutChart";
 import StackedColumnChart from "./Bar";
+import "./Dashboard.css";
+import ColumnBarChart2 from "./ColumnBarChart2";
 
 const Dashboard = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const listings = [
+    { image: img1, title: "Properties", videoImage: logoimg1 },
+    { image: img1, title: "Properties", videoImage: logoimg1 },
+    { image: img1, title: "Properties", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
@@ -49,14 +52,13 @@ const Dashboard = () => {
             className="scroll-button"
             onClick={() => handleScroll(100)}
           >
-            {" "}
             <IoIosArrowForward className="arrow" />
           </Button>
         </div>
       </header>
       <Row
         id="listing-container"
-        className="overflow-hidden flex-nowrap pt-md-4"
+        className="flex-nowrap pt-md-3 overflow-x-hidden"
       >
         {listings?.map((listing, index) => (
           <Col key={index} className="px-2">
@@ -66,19 +68,19 @@ const Dashboard = () => {
       </Row>
 
       {/* //search section */}
-      <section className="search-section d-flex align-items-center justify-content-center pt-md-4">
+      <section className="search-section d-flex align-items-center justify-content-center pt-md-3">
         <Row>
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             <div className="image-container">
               <img src={mask} alt="Images" className="mask-img" />
             </div>
           </Col>
           <Col
             xs={12}
-            md={9}
+            md={10}
             className="d-flex justify-content-center align-items-center"
           >
-            <div className="search-container d-flex align-items-center justify-content-end position-relative">
+            <div className="search-container d-flex align-items-end justify-content-end position-relative">
               <Form>
                 <Form.Group controlId="searchInput">
                   <Form.Control
@@ -88,13 +90,13 @@ const Dashboard = () => {
                   />
                 </Form.Group>
               </Form>
-              <div className="search-img position-absolute start-0 ms-4">
+              <div className="search-img position-absolute start-0 ms-5">
                 <img src={Search} alt="search-img" className="search-img" />
               </div>
               <div className="position-absolute end-0 me-5">
                 <img src={mike} alt="mike-img" className="mike-img" />
               </div>
-              <div className="position-absolute end-0 me-3 opacity-md-2 p-md-3 rounded-4 next-img-div">
+              <div className=" next-icon position-absolute end-0 me-3 opacity-md-2 p-md-3  next-img-div">
                 <img src={Next} alt="next-img" className="next-img" />
               </div>
             </div>
@@ -105,9 +107,9 @@ const Dashboard = () => {
       {/* 3rd section */}
       <section className="mt-md-3">
         <Row>
-          <Col md={6}>
+          <Col md={6} xs={12} sm={12}>
             <div className="chart-card rounded-1 p-md-2">
-              <h4 className="heading">Visitors stats</h4>
+              <h4 className="sub-heading">Visitors stats</h4>
               <LineChart
                 chartId={"lineChart"}
                 chartData={[
@@ -165,14 +167,14 @@ const Dashboard = () => {
                     category: "Dec",
                     value1: 100000,
                     value2: 70000,
-                  } /* Add more data as needed */,
+                  },
                 ]}
               />
             </div>
           </Col>
-          <Col md={6}>
-            {" "}
+          <Col md={6} sm={12}>
             <div className="chart-card rounded-1 p-md-2">
+              <h4 className="sub-heading">Visitors stats</h4>
               <DonutChart chartId={"donutChart"} />
             </div>
           </Col>
@@ -182,17 +184,54 @@ const Dashboard = () => {
       {/* 4th section */}
       <section className="mt-md-3">
         <Row>
-          <Col md={6}>
+          <Col md={6} sm={12} xs={12}>
             <div className="chart-card rounded-1 p-md-2">
-              <h4 className="heading">Traffic By Device</h4>
-              {/* <StackedColumnChart chartId="admissionChart" /> */}
+              <h4 className="sub-heading">Traffic By Device</h4>
+              <ColumnBarChart2 />
             </div>
           </Col>
-          <Col md={6}>
-            {" "}
-            <div className="chart-card rounded-1 p-md-2">
-              <h4 className="heading">Visitors stats</h4>
-              <DonutChart chartId={"donutChart"} />
+          <Col md={6} sm={12} xs={12} className="p-md-2">
+            <div className="d-flex flex-wrap justify-content-center gap-5">
+              <Card className="grid-card d-flex flex-column align-items-center justify-content-center">
+                <Card.Body className=" d-flex flex-column align-items-center justify-content-center g-texts">
+                  <h5 className="text-center g-texts fw-bold">
+                    Company Profit
+                  </h5>
+                  <h3 className="text-center fw-bold g-texts">
+                    5.6k <span className="g-span ml-md-2">+70.67</span>
+                  </h3>
+                </Card.Body>
+              </Card>
+              <Card className="grid-card d-flex flex-column align-items-center justify-content-center">
+                <Card.Body className=" d-flex flex-column align-items-center justify-content-center g-texts">
+                  <h5 className="text-center g-texts fw-bold">
+                    Company Profit
+                  </h5>
+                  <h3 className="text-center fw-bold g-texts">
+                    5.6k <span className="g-span ml-md-2">+70.67</span>
+                  </h3>
+                </Card.Body>
+              </Card>
+              <Card className="grid-card d-flex flex-column align-items-center justify-content-center">
+                <Card.Body className=" d-flex flex-column align-items-center justify-content-center g-texts">
+                  <h5 className="text-center g-texts fw-bold">
+                    Company Profit
+                  </h5>
+                  <h3 className="text-center fw-bold g-texts">
+                    5.6k <span className="g-span ml-md-2">+70.67</span>
+                  </h3>
+                </Card.Body>
+              </Card>
+              <Card className="grid-card d-flex flex-column align-items-center justify-content-center">
+                <Card.Body className=" d-flex flex-column align-items-center justify-content-center g-texts">
+                  <h5 className="text-center g-texts fw-bold">
+                    Company Profit
+                  </h5>
+                  <h3 className="text-center fw-bold g-texts">
+                    5.6k <span className="g-span ml-md-2">+70.67</span>
+                  </h3>
+                </Card.Body>
+              </Card>
             </div>
           </Col>
         </Row>

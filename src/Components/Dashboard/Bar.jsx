@@ -177,8 +177,8 @@ const StackedColumnChart = ({ chartId }) => {
     series4.stacked = true;
     series4.tooltip.pointerOrientation = "vertical";
 
-    series4.columns.template.column.cornerRadiusTopLeft = 10;
-    series4.columns.template.column.cornerRadiusTopRight = 10;
+    series4.columns.template.column.cornerRadiusTopLeft = 15;
+    series4.columns.template.column.cornerRadiusTopRight = 15;
 
     series4.tooltip.label.adapter.add("text", function (text, target) {
       if (target.dataItem && target.dataItem.valueY == 0) {
