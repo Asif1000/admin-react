@@ -57,8 +57,9 @@ const ColumnBarChart2 = () => {
     );
     categoryAxis.dataFields.category = "month";
     categoryAxis.renderer.grid.template.location = 0;
-    categoryAxis.renderer.minGridDistance = 30;
     categoryAxis.renderer.grid.template.disabled = true;
+    categoryAxis.renderer.minGridDistance = 40; // Adjust the minGridDistance to prevent label overlap
+    categoryAxis.renderer.labels.template.rotation = 0; // Ensure labels are not rotated
 
     let valueAxis = clustredColumnBarChart.yAxes.push(
       new am4charts.ValueAxis()
@@ -76,14 +77,12 @@ const ColumnBarChart2 = () => {
     series.columns.template.column.cornerRadiusTopLeft = 15;
     series.columns.template.column.cornerRadiusTopRight = 15;
 
-    clustredColumnBarChart.legend = new am4charts.Legend();
-
     clustredColumnBarChart.scrollbarX = null;
 
     clustredColumnBarChart.cursor = new am4charts.XYCursor();
   };
 
-  return <div id="chartdiv" style={{ width: "100%", height: "340px" }}></div>;
+  return <div id="chartdiv" style={{ width: "100%", height: "300px" }}></div>;
 };
 
 export default ColumnBarChart2;

@@ -10,6 +10,10 @@
     height: 24px;
 }
 
+.dashboard #listing-container {
+    max-width: 95%;
+}
+
 .dashboard .listing-card {
     width: 200px;
     height: 120px;
@@ -124,14 +128,19 @@
 
 .grid-card {
     width: 220px;
-    height: 150px;
+    height: 130px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media (max-width: 480px) {
+    .dashboard #listing-container {
+        max-width: 400px;
+    }
+
     .mask-img {
         width: 25%;
         height: 25%;
+        margin-bottom: 15px;
     }
 
     .custom-search-input {
@@ -178,8 +187,9 @@
     }
 
     .mask-img {
-        width: 65%;
-        height: 65%;
+        width: 40%;
+        height: 40%;
+        margin-bottom: 15px;
     }
 
     .grid-card {

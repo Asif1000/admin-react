@@ -134,7 +134,7 @@ const ColumnBarChart1 = ({ chartId }) => {
       id={chartId}
       style={{
         width: "100%",
-        height: "580px",
+        height: "560px",
       }}
     ></div>
   );

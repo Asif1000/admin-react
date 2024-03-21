@@ -43,41 +43,38 @@ const Dashboard = () => {
 
   return (
     <Container className="dashboard p-md-4 p-sm-2">
-      <section className="mb-4">
-        {" "}
-        <header className="d-flex justify-content-between">
-          <h5>Select your Listing</h5>
-          <div className="scroll-arrows">
-            <Button
-              variant="transparent"
-              className="scroll-button"
-              onClick={() => handleScroll(-100)}
-            >
-              <IoIosArrowBack className="arrow" />
-            </Button>
-            <Button
-              variant="transparent"
-              className="scroll-button"
-              onClick={() => handleScroll(100)}
-            >
-              <IoIosArrowForward className="arrow" />
-            </Button>
-          </div>
-        </header>
-        <Row
-          id="listing-container"
-          className="flex-nowrap pt-md-3 overflow-x-hidden"
-        >
-          {listings?.map((listing, index) => (
-            <Col key={index} className="px-2">
-              <ListingCards {...listing} />
-            </Col>
-          ))}
-        </Row>
-      </section>
+      <header className="d-flex justify-content-between">
+        <h5 className="mb-2">Select your Listing</h5>
+        <div className="scroll-arrows">
+          <Button
+            variant="transparent"
+            className="scroll-button"
+            onClick={() => handleScroll(-100)}
+          >
+            <IoIosArrowBack className="arrow" />
+          </Button>
+          <Button
+            variant="transparent"
+            className="scroll-button"
+            onClick={() => handleScroll(100)}
+          >
+            <IoIosArrowForward className="arrow" />
+          </Button>
+        </div>
+      </header>
+      <Row
+        id="listing-container"
+        className="flex-nowrap pt-md-3 overflow-x-hidden"
+      >
+        {listings?.map((listing, index) => (
+          <Col key={index} className="px-2">
+            <ListingCards {...listing} />
+          </Col>
+        ))}
+      </Row>
 
       {/* //search section */}
-      <section className="search-section d-flex align-items-center justify-content-center mb-4">
+      <section className="search-section d-flex align-items-center justify-content-center mb-4 mt-3">
         <Row>
           <Col xs={12} sm={12} md={2}>
             <div className="image-container d-flex align-items-center justify-content-center ">
