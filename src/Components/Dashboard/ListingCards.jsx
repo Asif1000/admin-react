@@ -6,7 +6,7 @@ const ListingCards = ({ image, title, videoImage }) => {
     <Card className="listing-card text-start">
       <Card.Img variant="top" src={image} className="listing-card-img " />
       <Card.Body>
-        <h3 className="sub-heading">{title}</h3>
+        <h3 className="card-sub-heading">{title}</h3>
         <div className="d-flex gap-2">
           <img src={videoImage} alt="Video Logo" />
           <span className="paragraph">Tutorial Video</span>

@@ -19,7 +19,6 @@ const ColumnBarChart2 = () => {
       clustredColumnBarChart.logo.disabled = true;
     }
 
-    // Add data
     clustredColumnBarChart.data = [
       {
         month: "Mac",
@@ -53,20 +52,19 @@ const ColumnBarChart2 = () => {
       },
     ];
 
-    // Create category axis
     let categoryAxis = clustredColumnBarChart.xAxes.push(
       new am4charts.CategoryAxis()
     );
     categoryAxis.dataFields.category = "month";
     categoryAxis.renderer.grid.template.location = 0;
     categoryAxis.renderer.minGridDistance = 30;
+    categoryAxis.renderer.grid.template.disabled = true;
 
-    // Create value axis
     let valueAxis = clustredColumnBarChart.yAxes.push(
       new am4charts.ValueAxis()
     );
+    valueAxis.renderer.grid.template.disabled = true;
 
-    // Create series
     let series = clustredColumnBarChart.series.push(
       new am4charts.ColumnSeries()
     );
@@ -78,15 +76,14 @@ const ColumnBarChart2 = () => {
     series.columns.template.column.cornerRadiusTopLeft = 15;
     series.columns.template.column.cornerRadiusTopRight = 15;
 
-    // Add legend
     clustredColumnBarChart.legend = new am4charts.Legend();
-    // Disable scrollbar
+
     clustredColumnBarChart.scrollbarX = null;
-    // Enable theme
+
     clustredColumnBarChart.cursor = new am4charts.XYCursor();
   };
 
-  return <div id="chartdiv" style={{ width: "100%", height: "300px" }}></div>;
+  return <div id="chartdiv" style={{ width: "100%", height: "340px" }}></div>;
 };
 
 export default ColumnBarChart2;

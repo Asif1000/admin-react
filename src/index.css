@@ -14,17 +14,29 @@ body {
 .heading {
     font-size: 20px;
     font-weight: 700;
+    font-family: "Poppins", sans-serif;
 }
 
 .sub-heading {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #323B63;
+    font-family: "Poppins", sans-serif;
+    margin: 5px 10px;
+}
+
+.card-sub-heading {
+    font-size: 19px;
     line-height: 36px;
     font-weight: 700;
     color: #323B63;
+    font-family: "Poppins", sans-serif;
 }
 
 .g-texts {
     color: #323B63;
+    font-family: "Poppins", sans-serif;
 }
 
 .g-span {
@@ -32,5 +44,6 @@ body {
     font-weight: normal;
     color: #0ED47B;
     font-weight: 700;
+    font-family: "Poppins", sans-serif;
 
 }
