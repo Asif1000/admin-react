@@ -165,7 +165,7 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media (min-width:485px) and (max-width: 900px) {
     .custom-search-input {
         height: 80px;
         width: 600px;
