@@ -28,7 +28,7 @@ const Dashboard = () => {
     { image: Directory, title: "Directory", videoImage: logoimg1 },
     { image: Jobs, title: "Jobs", videoImage: logoimg1 },
     { image: Venus, title: "Venues", videoImage: logoimg1 },
-    { image: img1, title: "Properties", videoImage: logoimg1 },
+    { image: Hotel, title: "Hotel", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
     { image: img1, title: "Properties", videoImage: logoimg1 },
@@ -87,6 +87,7 @@ const Dashboard = () => {
           <Col
             xs={12}
             md={10}
+            sm={12}
             className="d-flex justify-content-center align-items-center"
           >
             <div className="search-container d-flex align-items-end justify-content-end position-relative">
@@ -113,7 +114,7 @@ const Dashboard = () => {
         </Row>
       </section>
 
-      {/* 3rd section */}
+      {/* line chart section */}
       <section className="mb-4">
         <Row>
           <Col md={6} xs={12} sm={12}>
@@ -181,7 +182,7 @@ const Dashboard = () => {
               />
             </div>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={6} sm={12} xs={12}>
             <div className="chart-card rounded-1 p-md-2">
               <h4 className="sub-heading">Country States</h4>
               <DonutChart chartId={"donutChart"} />
@@ -190,7 +191,7 @@ const Dashboard = () => {
         </Row>
       </section>
 
-      {/* 4th section */}
+      {/* traffic track section */}
       <section className="mb-4">
         <Row>
           <Col md={6} sm={12} xs={12}>
@@ -201,8 +202,8 @@ const Dashboard = () => {
           </Col>
           <Col
             md={6}
-            sm={6}
-            xs={6}
+            sm={12}
+            xs={12}
             className="d-flex  justify-content-center align-items-center"
           >
             <div className="d-flex flex-wrap justify-content-center gap-md-5 p-0">
@@ -226,7 +227,7 @@ const Dashboard = () => {
           </Col>
         </Row>
       </section>
-      {/* 5th section */}
+      {/* recent enqueries  section */}
       <section className="mb-3 p-md-1">
         <Row>
           <div className="chart-card bar-cards rounded-1 p-md-2">
