@@ -1,7 +1,7 @@
 import React from "react";
 import { BsJustify } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
-import SearchIcon from "../assets/icons/Search.svg";
+import SearchIcon from "../assets/icons/search-blue.svg";
 import GroupIcon from "../assets/icons/Group.svg";
 import HowToListIcon from "../assets/icons/how-to-list.svg";
 import BellIcon from "../assets/icons/bell.svg";

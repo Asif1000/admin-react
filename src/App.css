@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Poppins-Regular";   
+    src: local("Poppins-Regular"),
+      url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+  
   body{
     background: #F8F8F8;
+    font-family: 'Poppins-Regular';
   }
   .icon {
     vertical-align: middle;

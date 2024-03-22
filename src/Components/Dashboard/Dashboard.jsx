@@ -42,7 +42,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="dashboard container p-md-4 p-sm-2 p-lg-2 p-md-4">
+    <Container className="dashboard p-md-4 p-sm-2 main-container">
       <header className="d-flex justify-content-between">
         <h5 className="mb-2">Select your Listing</h5>
         <div className="scroll-arrows">
