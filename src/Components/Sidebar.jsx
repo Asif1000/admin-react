@@ -12,14 +12,14 @@ import {
 import SideList from "./Sidebar/SideList";
 
 import MyFinderIcon from "../assets/images/logo.svg";
-import DashboardIcon from "../assets/Icons/dashboard-icon.svg";
-import MyCommunityIcon from "../assets/Icons/mycommunity.svg";
-import AttractionIcon from "../assets/Icons/attraction.svg";
-import QuickIcon from "../assets/Icons/quick.svg";
-import StoreIcon from "../assets/Icons/store.svg";
-import EnquiryIcon from "../assets/Icons/enquiry.svg";
-import ReviewIcon from "../assets/Icons/review.svg";
-import RecommendIcon from "../assets/Icons/recommendation.svg";
+import DashboardIcon from "../assets/icons/dashboard-icon.svg";
+import MyCommunityIcon from "../assets/icons/mycommunity.svg";
+import AttractionIcon from "../assets/icons/attraction.svg";
+import QuickIcon from "../assets/icons/quick.svg";
+import StoreIcon from "../assets/icons/store.svg";
+import EnquiryIcon from "../assets/icons/enquiry.svg";
+import ReviewIcon from "../assets/icons/review.svg";
+import RecommendIcon from "../assets/icons/recommendation.svg";
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const listData = [

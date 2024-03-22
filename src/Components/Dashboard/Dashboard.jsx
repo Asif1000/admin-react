@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import img1 from "../../assets/Icons/home-icon.svg";
-import car from "../../assets/Icons/Car.svg";
-import Jobs from "../../assets/Icons/Jobs.svg";
-import Directory from "../../assets/Icons/Directory.svg";
-import Venus from "../../assets/Icons/Venus.svg";
-import Hotel from "../../assets/Icons/Hotel.svg";
-import logoimg1 from "../../assets/Icons/video-icon.svg";
-import mask from "../../assets/Icons/Mask.svg";
-import Next from "../../assets/Icons/Next.svg";
-import Search from "../../assets/Icons/Search.svg";
-import mike from "../../assets/Icons/Mike.svg";
+import img1 from "../../assets/icons/home-icon.svg";
+import car from "../../assets/icons/Car.svg";
+import Jobs from "../../assets/icons/Jobs.svg";
+import Directory from "../../assets/icons/Directory.svg";
+import Venus from "../../assets/icons/Venus.svg";
+import Hotel from "../../assets/icons/Hotel.svg";
+import logoimg1 from "../../assets/icons/video-icon.svg";
+import mask from "../../assets/icons/Mask.svg";
+import Next from "../../assets/icons/Next.svg";
+import Search from "../../assets/icons/Search.svg";
+import mike from "../../assets/icons/Mike.svg";
 import ListingCards from "./ListingCards";
 import LineChart from "./LineChart";
 import DonutChart from "./DonutChart";
@@ -42,7 +42,7 @@ const Dashboard = () => {
   };
 
   return (
-    <Container className="dashboard p-md-4 p-sm-2">
+    <Container className="dashboard p-md-4 p-sm-2 main-container">
       <header className="d-flex justify-content-between">
         <h5 className="mb-2">Select your Listing</h5>
         <div className="scroll-arrows">
