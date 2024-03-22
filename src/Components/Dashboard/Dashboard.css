@@ -1,0 +1,208 @@
+.dashboard {
+    background: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard .right-arrow {
+    font-weight: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.dashboard #listing-container {
+    max-width: 95%;
+}
+
+.dashboard .listing-card {
+    width: 200px;
+    height: 120px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.listing-card-img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+}
+
+.dashboard .scroll-arrows .scroll-button:focus {
+    outline: none;
+}
+
+.dashboard #listing-container {
+    transition: transform 0.3s ease;
+}
+
+.mask-img {
+    width: 60%;
+    height: 60%;
+}
+
+.next-icon {
+    border-radius: 50%;
+}
+
+.custom-search-input {
+    height: 80px;
+    width: 700px;
+    background: linear-gradient(89.17deg, #003DCA 2.97%, #3738FF 95.78%);
+    color: white !important;
+    border: none;
+    border-radius: 60px 60px 60px 60px;
+    padding-left: 90px;
+    font-size: 23px;
+}
+
+.custom-search-input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-img, .next-img, .mike-img {
+    width: 35px;
+    height: 35px;
+}
+
+.search-img-div {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 999;
+    border-right: 1px solid white;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.mike-img-div {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.next-img-div {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #3030C2;
+    padding: 5px;
+}
+
+.chart-card {
+    width: 100%;
+    height: 430px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffff;
+    margin-bottom: 10px;
+}
+
+.traffic-chart-card {
+    width: 100%;
+    height: 350px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffff;
+    margin-bottom: 10px;
+
+}
+
+.bar-cards {
+    height: 620px;
+}
+
+.grid-card {
+    width: 220px;
+    height: 135px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (max-width: 480px) {
+    .dashboard #listing-container {
+        max-width: 400px;
+    }
+
+    .mask-img {
+        width: 25%;
+        height: 25%;
+        margin-bottom: 15px;
+    }
+
+    .custom-search-input {
+        height: 60px;
+        width: 370px;
+        padding-left: 40px;
+    }
+
+    .search-img-div {
+        top: 50%;
+        left: 5px;
+    }
+
+    .search-img, .next-img, .mike-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mike-img-div {
+        top: 50%;
+        right: 40px;
+    }
+
+    .custom-search-input::placeholder {
+        font-size: 13px;
+    }
+
+    .next-img-div {
+        top: 50%;
+        right: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .custom-search-input {
+        height: 80px;
+        width: 600px;
+        padding-left: 100px;
+    }
+
+    .search-img-div {
+        top: 50%;
+        left: 20px;
+    }
+
+    .mask-img {
+        width: 40%;
+        height: 40%;
+        margin-bottom: 15px;
+    }
+
+    .grid-card {
+        width: 180px;
+        height: 120px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .grid-card {
+        width: 180px;
+        height: 120px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
