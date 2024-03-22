@@ -10,7 +10,7 @@ import Hotel from "../../assets/icons/Hotel.svg";
 import logoimg1 from "../../assets/icons/video-icon.svg";
 import mask from "../../assets/icons/Mask.svg";
 import Next from "../../assets/icons/Next.svg";
-import Search from "../../assets/icons/Search.svg";
+import Search from "../../assets/icons/search-blue.svg";
 import mike from "../../assets/icons/Mike.svg";
 import ListingCards from "./ListingCards";
 import LineChart from "./LineChart";
@@ -44,7 +44,7 @@ const Dashboard = () => {
   return (
     <Container className="dashboard p-md-4 p-sm-2 main-container">
       <header className="d-flex justify-content-between">
-        <h5 className="mb-2">Select your Listing</h5>
+        <h5 className="mb-2 sub-heading">Select your Listing</h5>
         <div className="scroll-arrows">
           <Button
             variant="transparent"
@@ -235,7 +235,7 @@ const Dashboard = () => {
           </div>
         </Row>
       </section>
-    </div>
+    </Container>
   );
 };
 
