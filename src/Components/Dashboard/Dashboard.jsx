@@ -42,7 +42,7 @@ const Dashboard = () => {
   };
 
   return (
-    <Container className="dashboard p-md-4 p-sm-2">
+    <div className="dashboard container p-md-4 p-sm-2 p-lg-2 p-md-4">
       <header className="d-flex justify-content-between">
         <h5 className="mb-2">Select your Listing</h5>
         <div className="scroll-arrows">
@@ -64,7 +64,7 @@ const Dashboard = () => {
       </header>
       <Row
         id="listing-container"
-        className="flex-nowrap pt-md-3 overflow-x-hidden"
+        className="flex-nowrap pt-md-3 pt-lg-3 overflow-x-hidden"
       >
         {listings?.map((listing, index) => (
           <Col key={index} className="px-2">
@@ -76,7 +76,7 @@ const Dashboard = () => {
       {/* //search section */}
       <section className="search-section d-flex align-items-center justify-content-center mb-4 mt-3">
         <Row>
-          <Col xs={12} sm={12} md={2}>
+          <Col xs={12} sm={12} md={2} lg={2}>
             <div className="image-container d-flex align-items-center justify-content-center ">
               <img src={mask} alt="Images" className="mask-img" />
             </div>
@@ -85,6 +85,7 @@ const Dashboard = () => {
             xs={12}
             md={10}
             sm={12}
+            lg={10}
             className="d-flex justify-content-center align-items-center"
           >
             <div className="search-container d-flex align-items-end justify-content-end position-relative">
@@ -114,7 +115,7 @@ const Dashboard = () => {
       {/* line chart section */}
       <section className="mb-4">
         <Row>
-          <Col md={6} xs={12} sm={12}>
+          <Col md={6} xs={12} sm={12} lg={6}>
             <div className="chart-card rounded-1 p-md-2">
               <h4 className="sub-heading">Visitors stats</h4>
               <LineChart
@@ -179,7 +180,7 @@ const Dashboard = () => {
               />
             </div>
           </Col>
-          <Col md={6} sm={12} xs={12}>
+          <Col md={6} sm={12} xs={12} lg={6}>
             <div className="chart-card rounded-1 p-md-2">
               <h4 className="sub-heading">Country States</h4>
               <DonutChart chartId={"donutChart"} />
@@ -191,7 +192,7 @@ const Dashboard = () => {
       {/* traffic track section */}
       <section className="mb-4">
         <Row>
-          <Col md={6} sm={12} xs={12}>
+          <Col md={6} lg={6} sm={12} xs={12}>
             <div className="traffic-chart-card rounded-1 p-md-2">
               <h4 className="sub-heading">Traffic By Device</h4>
               <ColumnBarChart2 />
@@ -201,6 +202,7 @@ const Dashboard = () => {
             md={6}
             sm={12}
             xs={12}
+            lg={6}
             className="d-flex  justify-content-center align-items-center"
           >
             <div className="d-flex flex-wrap justify-content-center gap-md-5 p-0">
@@ -226,14 +228,14 @@ const Dashboard = () => {
       </section>
       {/* recent enqueries  section */}
       <section className="mb-3 p-md-1">
-        <Row>
+        <Row lg={12} md={12}>
           <div className="chart-card bar-cards rounded-1 p-md-2">
             <h4 className="sub-heading">Recent Enquiries</h4>
             <ColumnBarChart1 chartId="admissionChart" />
           </div>
         </Row>
       </section>
-    </Container>
+    </div>
   );
 };
 
