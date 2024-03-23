@@ -1,0 +1,60 @@
+.Venue-form-container {
+    width: 100%;
+    height: 100%;
+}
+
+.Venue-card {
+    width: 100%;
+    height: 170px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+.venue-header-img img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #F800C0;
+    border-radius: 50%;
+}
+
+.venue-header-text-div .span1 {
+    color: #F800C0;
+}
+
+/* common text style start*/
+.header-text {
+    color: #211E1D;
+    font-weight: bold;
+}
+
+.form-paragraph {
+    color: #000000;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 13px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.g-hr {
+    margin-top: -5px;
+}
+
+/* common text style start*/
+.status {
+    border-bottom: 2.5px solid #4B4CFF;
+    margin-left: 0px;
+}
+
+hr {
+    margin: 0 0 15px 0px;
+
+}
