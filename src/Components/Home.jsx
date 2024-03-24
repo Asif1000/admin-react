@@ -6,8 +6,8 @@ import Dashboard from "./Dashboard/Dashboard";
 const Home = () => {
   return (
     <>
-      {/* <Dashboard /> */}
-      <VenueHome />
+      <Dashboard />
+      {/* <VenueHome /> */}
     </>
   );
 };
