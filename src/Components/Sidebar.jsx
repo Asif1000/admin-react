@@ -26,34 +26,47 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
     {
       title: "Dashboard",
       icon: DashboardIcon,
+      path: "/",
     },
     {
       title: "My Community",
       icon: MyCommunityIcon,
+      path: "/",
     },
     {
       title: "Attraction",
       icon: AttractionIcon,
+      path: "/",
+    },
+    {
+      title: "Venues",
+      icon: AttractionIcon,
+      path: "/venue",
     },
     {
       title: "Quick",
       icon: QuickIcon,
+      path: "/",
     },
     {
       title: "Store",
       icon: StoreIcon,
+      path: "/",
     },
     {
       title: "Enquiry",
       icon: EnquiryIcon,
+      path: "/",
     },
     {
       title: "Review",
       icon: ReviewIcon,
+      path: "/",
     },
     {
       title: "Recommendation",
       icon: RecommendIcon,
+      path: "/",
     },
   ];
 
@@ -73,7 +86,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 
       <ul className="sidebar-list">
         {listData.map((list) => (
-          <SideList icon={list.icon} title={list.title} />
+          <SideList icon={list.icon} title={list.title} path={list.path}/>
         ))}
       </ul>
     </aside>

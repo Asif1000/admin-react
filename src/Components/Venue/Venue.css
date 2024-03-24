@@ -1,0 +1,85 @@
+.page-heading {
+    background: #fff;
+    border-radius: var(--12, 12px);
+    height: 60px;
+    padding: 15px;
+    box-shadow: 8px 16px 32px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.page-heading .page-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.breadcrumb-section {
+    background: #F4F4F4;
+    padding: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 4px;
+    border-radius: var(--12, 12px);
+    font-size: 18px;
+}
+.breadcrumb-section .breadcrumb {
+    position: relative;
+    bottom: 22px;
+}
+.breadcrumb-item a {
+    text-decoration: none;
+}
+.manage-section {
+    border-radius: var(--12, 12px);
+    box-shadow: 8px 16px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.data-search {
+    background: #F5F8FE;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('../../assets/icons/search-img.svg');
+    background-position: 10px 10px; 
+    padding: 9px 13px 9px 40px;
+    background-size: 21px;
+    background-repeat: no-repeat;
+}
+.action-dropdown {
+    background: #F2F2FF!important;
+    color: #323B63;
+    font-weight: 500;
+    padding: 0px;
+    width: 118px;
+    height: 30px;
+}
+.action-dropdown:hover, .action-dropdown:active {
+    color: #323B63!important;
+}
+
+.add-button {
+    background: #F800C0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    line-height: 2px;
+    border-radius: 8px;
+    position: relative;
+    right: 180px;
+    padding: 20px;
+    min-width: 160px;
+    bottom: 5px;
+    text-align: left;
+}
+.add-button:hover, .add-button:active {
+    background: #F800C0!important;
+}
+.add-button span {
+    position: relative;
+    bottom: 10px;
+}
+.add-button img {
+    background: #fff;
+    padding: 3px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 100px;
+}
