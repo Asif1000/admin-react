@@ -9,6 +9,16 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #ffff;
     border-radius: 10px;
+    position: relative;
+    left: 0;
+}
+
+.edit-img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    right: 40px;
 }
 
 .venue-header-img img {
@@ -56,5 +66,7 @@
 
 hr {
     margin: 0 0 15px 0px;
-
 }
+
+
+@media (max-width:480px) {}
