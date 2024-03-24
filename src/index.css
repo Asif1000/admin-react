@@ -9,9 +9,14 @@ body {
     font-family: sans-serif;
     background: #999999;
     font-family: "Poppins", sans-serif;
-    /* overflow-x: hidden; */
+
 }
 
+a {
+    text-decoration: none;
+}
+
+/* fonts sizes */
 .heading {
     font-size: 20px;
     font-weight: 700;
